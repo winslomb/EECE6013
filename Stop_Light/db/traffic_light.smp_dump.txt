@@ -1,0 +1,9 @@
+
+State Machine - |traffic_light|cur_state
+Name cur_state.STATE_5 cur_state.STATE_4 cur_state.STATE_3 cur_state.STATE_2 cur_state.STATE_1 cur_state.000000 
+cur_state.000000 0 0 0 0 0 0 
+cur_state.STATE_1 0 0 0 0 1 1 
+cur_state.STATE_2 0 0 0 1 0 1 
+cur_state.STATE_3 0 0 1 0 0 1 
+cur_state.STATE_4 0 1 0 0 0 1 
+cur_state.STATE_5 1 0 0 0 0 1 

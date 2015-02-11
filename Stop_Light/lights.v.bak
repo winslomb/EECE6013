@@ -1,0 +1,9 @@
+// Top-level module
+module lights(
+	input [1:0] SW,
+	input CLOCK_50,
+	output reg [1:0] LED
+);
+	always @(posedge CLOCK_50)
+		LED [1:0] <= SW [1:0];
+endmodule
