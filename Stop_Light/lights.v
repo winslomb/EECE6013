@@ -23,7 +23,7 @@ STATE_5 = 5;
  
  assign rst = ~KEY[0];
  wire slow_clk;
- clocks grandma(
+ clocks clk_div(
 	.Clk_in(CLOCK_50),
 	.Clk_out(slow_clk)
 	);
@@ -65,7 +65,7 @@ always @(cur_state) begin
 		LED[3] <= 1;
 		LED[4] <= 0;
 		LED[5] <= 0;
-		next_state <= STATE_0;
+		next_state <= STATE_4;
 	end
 			STATE_4: begin
 		LED[0] <= 0;
@@ -74,7 +74,7 @@ always @(cur_state) begin
 		LED[3] <= 0;
 		LED[4] <= 1;
 		LED[5] <= 0;
-		next_state <= STATE_0;
+		next_state <= STATE_5;
 	end
 		STATE_5: begin
 		LED[0] <= 0;

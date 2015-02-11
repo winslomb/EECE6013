@@ -3,75 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -2.599
-TNS   : -38.827
+Slack : -2.952
+TNS   : -40.682
 
-Type  : Slow 1200mV 85C Model Setup 'clocks:grandma|Clk_out'
-Slack : -0.072
-TNS   : -0.072
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.273
+Type  : Slow 1200mV 85C Model Setup 'clocks:clk_div|Clk_out'
+Slack : 0.210
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clocks:grandma|Clk_out'
-Slack : 0.360
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.263
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clocks:clk_div|Clk_out'
+Slack : 0.371
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
 TNS   : -29.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clocks:grandma|Clk_out'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clocks:clk_div|Clk_out'
 Slack : -1.000
-TNS   : -4.000
+TNS   : -6.000
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -2.228
-TNS   : -31.830
+Slack : -2.571
+TNS   : -33.449
 
-Type  : Slow 1200mV 0C Model Setup 'clocks:grandma|Clk_out'
-Slack : 0.050
+Type  : Slow 1200mV 0C Model Setup 'clocks:clk_div|Clk_out'
+Slack : 0.293
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.258
+Slack : 0.236
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clocks:grandma|Clk_out'
-Slack : 0.320
+Type  : Slow 1200mV 0C Model Hold 'clocks:clk_div|Clk_out'
+Slack : 0.332
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
 TNS   : -29.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clocks:grandma|Clk_out'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clocks:clk_div|Clk_out'
 Slack : -1.000
-TNS   : -4.000
+TNS   : -6.000
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -1.077
-TNS   : -11.542
+Slack : -1.197
+TNS   : -11.874
 
-Type  : Fast 1200mV 0C Model Setup 'clocks:grandma|Clk_out'
-Slack : 0.397
+Type  : Fast 1200mV 0C Model Setup 'clocks:clk_div|Clk_out'
+Slack : 0.556
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.100
+Slack : 0.059
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clocks:grandma|Clk_out'
+Type  : Fast 1200mV 0C Model Hold 'clocks:clk_div|Clk_out'
 Slack : 0.194
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -30.537
+TNS   : -30.430
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clocks:grandma|Clk_out'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clocks:clk_div|Clk_out'
 Slack : -1.000
-TNS   : -4.000
+TNS   : -6.000
 
 ------------------------------------------------------------
