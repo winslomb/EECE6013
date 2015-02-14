@@ -1,0 +1,23 @@
+module vender(                                 
+                                                                   
+    input [1:0] SW,
+    input [1:0] KEY,
+    output reg [1:0] LED
+);
+
+assign button = ~KEY[0];
+
+// each product is worth 1 quarter
+always @(posedge SW, posedge button) begin
+    if (button) begin
+        case (SW)
+            0: LED[0] <= 1;
+            1: LED[1] <= 1;
+            2: LED[2] <= 1;
+            3: LED[3] <= 1;
+            default: LED <= 2'bxx; // don't care if switch config is invalid
+        endcase
+    end
+end
+
+endmodule
