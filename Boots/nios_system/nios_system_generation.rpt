@@ -1,0 +1,205 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:\Altera\Boots --output-directory=C:\Altera\Boots\nios_system --report-file=bsf:C:\Altera\Boots\nios_system\nios_system.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\Altera\Boots\nios_system.qsys --remove-qsys-generate-warning
+Progress: Loading Boots/nios_system.qsys
+Progress: Reading input file
+Progress: Adding Dip_Switches [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Dip_Switches
+Progress: Adding Expansion_JP1 [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP1
+Progress: Adding Expansion_JP2 [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP2
+Progress: Adding Expansion_JP3 [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP3
+Progress: Adding Expansion_JP3_In [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP3_In
+Progress: Adding Green_LEDs [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Green_LEDs
+Progress: Adding Interval_Timer [altera_avalon_timer 14.1]
+Progress: Parameterizing module Interval_Timer
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding JTAG_to_FPGA_Bridge [altera_jtag_avalon_master 14.1]
+Progress: Parameterizing module JTAG_to_FPGA_Bridge
+Progress: Adding Nios2 [altera_nios2_gen2 14.1]
+Progress: Parameterizing module Nios2
+Progress: Adding Nios2_Floating_Point [altera_nios_custom_instr_floating_point 14.1]
+Progress: Parameterizing module Nios2_Floating_Point
+Progress: Adding Onchip_SRAM [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module Onchip_SRAM
+Progress: Adding Onchip_SRAM_2 [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module Onchip_SRAM_2
+Progress: Adding Pushbuttons [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Pushbuttons
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 14.1]
+Progress: Parameterizing module SDRAM
+Progress: Adding SysID [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module SysID
+Progress: Adding System_PLL [altera_up_avalon_sys_sdram_pll 14.0]
+Progress: Parameterizing module System_PLL
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.SysID: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios_system.SysID: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:\Altera\Boots --output-directory=C:\Altera\Boots\nios_system\synthesis --file-set=QUARTUS_SYNTH --report-file=html:C:\Altera\Boots\nios_system\nios_system.html --report-file=sopcinfo:C:\Altera\Boots\nios_system.sopcinfo --report-file=cmp:C:\Altera\Boots\nios_system\nios_system.cmp --report-file=qip:C:\Altera\Boots\nios_system\synthesis\nios_system.qip --report-file=svd:C:\Altera\Boots\nios_system\synthesis\nios_system.svd --report-file=regmap:C:\Altera\Boots\nios_system\synthesis\nios_system.regmap --report-file=xml:C:\Altera\Boots\nios_system\nios_system.xml --report-file=debuginfo:C:\Altera\Boots\nios_system\synthesis\nios_system.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\Altera\Boots\nios_system.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading Boots/nios_system.qsys
+Progress: Reading input file
+Progress: Adding Dip_Switches [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Dip_Switches
+Progress: Adding Expansion_JP1 [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP1
+Progress: Adding Expansion_JP2 [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP2
+Progress: Adding Expansion_JP3 [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP3
+Progress: Adding Expansion_JP3_In [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Expansion_JP3_In
+Progress: Adding Green_LEDs [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Green_LEDs
+Progress: Adding Interval_Timer [altera_avalon_timer 14.1]
+Progress: Parameterizing module Interval_Timer
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding JTAG_to_FPGA_Bridge [altera_jtag_avalon_master 14.1]
+Progress: Parameterizing module JTAG_to_FPGA_Bridge
+Progress: Adding Nios2 [altera_nios2_gen2 14.1]
+Progress: Parameterizing module Nios2
+Progress: Adding Nios2_Floating_Point [altera_nios_custom_instr_floating_point 14.1]
+Progress: Parameterizing module Nios2_Floating_Point
+Progress: Adding Onchip_SRAM [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module Onchip_SRAM
+Progress: Adding Onchip_SRAM_2 [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module Onchip_SRAM_2
+Progress: Adding Pushbuttons [altera_up_avalon_parallel_port 14.0]
+Progress: Parameterizing module Pushbuttons
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 14.1]
+Progress: Parameterizing module SDRAM
+Progress: Adding SysID [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module SysID
+Progress: Adding System_PLL [altera_up_avalon_sys_sdram_pll 14.0]
+Progress: Parameterizing module System_PLL
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.SysID: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios_system.SysID: Time stamp will be automatically updated when this component is generated.
+Info: nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
+Warning: nios_system: "No matching role found for Nios2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: nios_system: "No matching role found for Nios2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Info: Dip_Switches: Starting Generation of Parallel Port
+Info: Dip_Switches: "nios_system" instantiated altera_up_avalon_parallel_port "Dip_Switches"
+Info: Expansion_JP1: Starting Generation of Parallel Port
+Info: Expansion_JP1: "nios_system" instantiated altera_up_avalon_parallel_port "Expansion_JP1"
+Info: Expansion_JP2: Starting Generation of Parallel Port
+Info: Expansion_JP2: "nios_system" instantiated altera_up_avalon_parallel_port "Expansion_JP2"
+Info: Expansion_JP3: Starting Generation of Parallel Port
+Info: Expansion_JP3: "nios_system" instantiated altera_up_avalon_parallel_port "Expansion_JP3"
+Info: Expansion_JP3_In: Starting Generation of Parallel Port
+Info: Expansion_JP3_In: "nios_system" instantiated altera_up_avalon_parallel_port "Expansion_JP3_In"
+Info: Green_LEDs: Starting Generation of Parallel Port
+Info: Green_LEDs: "nios_system" instantiated altera_up_avalon_parallel_port "Green_LEDs"
+Info: Interval_Timer: Starting RTL generation for module 'nios_system_Interval_Timer'
+Info: Interval_Timer:   Generation command is [exec E:/Master_Folder/Programs/Altera/quartus/bin64//perl/bin/perl.exe -I E:/Master_Folder/Programs/Altera/quartus/bin64//perl/lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/europa -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/perl_lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/common -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios_system_Interval_Timer --dir=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0007_Interval_Timer_gen/ --quartus_dir=E:/master_folder/programs/altera/quartus --verilog --config=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0007_Interval_Timer_gen//nios_system_Interval_Timer_component_configuration.pl  --do_build_sim=0  ]
+Info: Interval_Timer: Done RTL generation for module 'nios_system_Interval_Timer'
+Info: Interval_Timer: "nios_system" instantiated altera_avalon_timer "Interval_Timer"
+Info: JTAG_UART: Starting RTL generation for module 'nios_system_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec E:/master_folder/programs/altera/quartus/bin64/perl/bin/perl.exe -I E:/master_folder/programs/altera/quartus/bin64/perl/lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/europa -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/perl_lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/common -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_JTAG_UART --dir=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0008_JTAG_UART_gen/ --quartus_dir=E:/master_folder/programs/altera/quartus --verilog --config=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0008_JTAG_UART_gen//nios_system_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info: JTAG_UART: Done RTL generation for module 'nios_system_JTAG_UART'
+Info: JTAG_UART: "nios_system" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: JTAG_to_FPGA_Bridge: "nios_system" instantiated altera_jtag_avalon_master "JTAG_to_FPGA_Bridge"
+Info: Nios2: "nios_system" instantiated altera_nios2_gen2 "Nios2"
+Info: Nios2_Floating_Point: "nios_system" instantiated altera_nios_custom_instr_floating_point "Nios2_Floating_Point"
+Info: Onchip_SRAM: Starting RTL generation for module 'nios_system_Onchip_SRAM'
+Info: Onchip_SRAM:   Generation command is [exec E:/master_folder/programs/altera/quartus/bin64/perl/bin/perl.exe -I E:/master_folder/programs/altera/quartus/bin64/perl/lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/europa -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/perl_lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/common -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_Onchip_SRAM --dir=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0009_Onchip_SRAM_gen/ --quartus_dir=E:/master_folder/programs/altera/quartus --verilog --config=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0009_Onchip_SRAM_gen//nios_system_Onchip_SRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: Onchip_SRAM: Done RTL generation for module 'nios_system_Onchip_SRAM'
+Info: Onchip_SRAM: "nios_system" instantiated altera_avalon_onchip_memory2 "Onchip_SRAM"
+Info: Onchip_SRAM_2: Starting RTL generation for module 'nios_system_Onchip_SRAM_2'
+Info: Onchip_SRAM_2:   Generation command is [exec E:/master_folder/programs/altera/quartus/bin64/perl/bin/perl.exe -I E:/master_folder/programs/altera/quartus/bin64/perl/lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/europa -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/perl_lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/common -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_Onchip_SRAM_2 --dir=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0010_Onchip_SRAM_2_gen/ --quartus_dir=E:/master_folder/programs/altera/quartus --verilog --config=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0010_Onchip_SRAM_2_gen//nios_system_Onchip_SRAM_2_component_configuration.pl  --do_build_sim=0  ]
+Info: Onchip_SRAM_2: Done RTL generation for module 'nios_system_Onchip_SRAM_2'
+Info: Onchip_SRAM_2: "nios_system" instantiated altera_avalon_onchip_memory2 "Onchip_SRAM_2"
+Info: Pushbuttons: Starting Generation of Parallel Port
+Info: Pushbuttons: "nios_system" instantiated altera_up_avalon_parallel_port "Pushbuttons"
+Info: SDRAM: Starting RTL generation for module 'nios_system_SDRAM'
+Info: SDRAM:   Generation command is [exec E:/master_folder/programs/altera/quartus/bin64/perl/bin/perl.exe -I E:/master_folder/programs/altera/quartus/bin64/perl/lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/europa -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/perl_lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/common -I E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- E:/master_folder/programs/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nios_system_SDRAM --dir=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0012_SDRAM_gen/ --quartus_dir=E:/master_folder/programs/altera/quartus --verilog --config=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0012_SDRAM_gen//nios_system_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SDRAM: Done RTL generation for module 'nios_system_SDRAM'
+Info: SDRAM: "nios_system" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: SysID: "nios_system" instantiated altera_avalon_sysid_qsys "SysID"
+Info: System_PLL: "nios_system" instantiated altera_up_avalon_sys_sdram_pll "System_PLL"
+Info: Nios2_custom_instruction_master_translator: "nios_system" instantiated altera_customins_master_translator "Nios2_custom_instruction_master_translator"
+Info: Nios2_custom_instruction_master_multi_xconnect: "nios_system" instantiated altera_customins_xconnect "Nios2_custom_instruction_master_multi_xconnect"
+Info: Nios2_custom_instruction_master_multi_slave_translator0: "nios_system" instantiated altera_customins_slave_translator "Nios2_custom_instruction_master_multi_slave_translator0"
+Info: mm_interconnect_0: "nios_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "JTAG_to_FPGA_Bridge" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "JTAG_to_FPGA_Bridge" instantiated timing_adapter "timing_adt"
+Info: fifo: "JTAG_to_FPGA_Bridge" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "JTAG_to_FPGA_Bridge" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "JTAG_to_FPGA_Bridge" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "JTAG_to_FPGA_Bridge" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "JTAG_to_FPGA_Bridge" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "JTAG_to_FPGA_Bridge" instantiated channel_adapter "p2b_adapter"
+Info: cpu: Starting RTL generation for module 'nios_system_Nios2_cpu'
+Info: cpu:   Generation command is [exec E:/master_folder/programs/altera/quartus/bin64/eperlcmd.exe -I E:/master_folder/programs/altera/quartus/bin64/perl/lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/europa -I E:/master_folder/programs/altera/quartus/sopc_builder/bin/perl_lib -I E:/master_folder/programs/altera/quartus/sopc_builder/bin -I E:/master_folder/programs/altera/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I E:/master_folder/programs/altera/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I E:/master_folder/programs/altera/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I E:/master_folder/programs/altera/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- E:/master_folder/programs/altera/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_system_Nios2_cpu --dir=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0021_cpu_gen/ --quartus_bindir=E:/master_folder/programs/altera/quartus/bin64 --verilog --config=C:/Users/Matt/AppData/Local/Temp/alt6497_5623956168030525098.dir/0021_cpu_gen//nios_system_Nios2_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2015.03.02 20:48:06 (*) Starting Nios II generation
+Info: cpu: # 2015.03.02 20:48:06 (*)   Checking for plaintext license.
+Info: cpu: # 2015.03.02 20:48:09 (*)   Couldn't query license setup in Quartus directory E:/master_folder/programs/altera/quartus/bin64
+Info: cpu: # 2015.03.02 20:48:09 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2015.03.02 20:48:09 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2015.03.02 20:48:09 (*)   Plaintext license not found.
+Info: cpu: # 2015.03.02 20:48:09 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2015.03.02 20:48:09 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2015.03.02 20:48:09 (*)   Creating all objects for CPU
+Info: cpu: # 2015.03.02 20:48:11 (*)   Generating RTL from CPU objects
+Info: cpu: # 2015.03.02 20:48:11 (*)   Creating plain-text RTL
+Info: cpu: # 2015.03.02 20:48:15 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'nios_system_Nios2_cpu'
+Info: cpu: "Nios2" instantiated altera_nios2_gen2_unit "cpu"
+Info: sys_pll: "System_PLL" instantiated altera_up_altpll "sys_pll"
+Info: reset_from_locked: "System_PLL" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: Nios2_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "Nios2_data_master_translator"
+Info: JTAG_UART_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "JTAG_UART_avalon_jtag_slave_translator"
+Info: Nios2_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "Nios2_data_master_agent"
+Info: JTAG_UART_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "JTAG_UART_avalon_jtag_slave_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_012: "mm_interconnect_0" instantiated altera_merlin_router "router_012"
+Info: router_013: "mm_interconnect_0" instantiated altera_merlin_router "router_013"
+Info: router_017: "mm_interconnect_0" instantiated altera_merlin_router "router_017"
+Info: JTAG_to_FPGA_Bridge_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "JTAG_to_FPGA_Bridge_master_limiter"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: SDRAM_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "SDRAM_s1_burst_adapter"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_010: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_010"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_014: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_014"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_010: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_010"
+Info: rsp_demux_014: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_014"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: SDRAM_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "SDRAM_s1_rsp_width_adapter"
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Altera/Boots/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: nios_system: Done "nios_system" with 61 modules, 95 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

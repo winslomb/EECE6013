@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><altera_monitor_program_project version="1.0">
+    <architecture>Nios II</architecture>
+    <system>
+        <system_info filepath="true">nios_system.sopcinfo</system_info>
+        <system_sof filepath="true">DE0_Nano_Basic_Computer.sof</system_sof>
+        <system_jdi filepath="true"/>
+        <cable>USB-Blaster [USB-0]</cable>
+        <processor>Nios2</processor>
+        <terminal>JTAG_UART</terminal>
+    </system>
+    <program>
+        <type>C Program</type>
+        <source_files>
+            <source_file filepath="true">boot_code.c</source_file>
+        </source_files>
+        <options>
+            <compiler_flags>-g -O1 -ffunction-sections -fverbose-asm -fno-inline -mno-cache-volatile</compiler_flags>
+            <emulate_unimpl_instructions>true</emulate_unimpl_instructions>
+            <use_small_c_library>false</use_small_c_library>
+        </options>
+        <linker_sections>
+            <linker_section name=".text">
+                <memory_device>Onchip_SRAM.s2</memory_device>
+                <base_address>0x08000000</base_address>
+                <end_address>0x08001FFF</end_address>
+                <required_section/>
+            </linker_section>
+        </linker_sections>
+    </program>
+</altera_monitor_program_project>

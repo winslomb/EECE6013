@@ -1,0 +1,50 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst nios_system.JTAG_to_FPGA_Bridge -pg 1 -lvl 2 -y 1270
+preplace inst nios_system.Interval_Timer -pg 1 -lvl 4 -y 770
+preplace inst nios_system.Onchip_SRAM_2 -pg 1 -lvl 3 -y 1110
+preplace inst nios_system.JTAG_to_FPGA_Bridge.fifo -pg 1
+preplace inst nios_system.JTAG_to_FPGA_Bridge.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst nios_system.SysID -pg 1 -lvl 3 -y 1250
+preplace inst nios_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst nios_system.Expansion_JP3_In -pg 1 -lvl 4 -y 530
+preplace inst nios_system.JTAG_to_FPGA_Bridge.b2p -pg 1
+preplace inst nios_system.Green_LEDs -pg 1 -lvl 4 -y 660
+preplace inst nios_system.JTAG_to_FPGA_Bridge.p2b -pg 1
+preplace inst nios_system.JTAG_to_FPGA_Bridge.clk_rst -pg 1
+preplace inst nios_system.Expansion_JP1 -pg 1 -lvl 4 -y 140
+preplace inst nios_system.JTAG_to_FPGA_Bridge.b2p_adapter -pg 1
+preplace inst nios_system.Expansion_JP2 -pg 1 -lvl 4 -y 270
+preplace inst nios_system.JTAG_to_FPGA_Bridge.transacto -pg 1
+preplace inst nios_system.System_PLL.reset_from_locked -pg 1
+preplace inst nios_system.Expansion_JP3 -pg 1 -lvl 4 -y 400
+preplace inst nios_system.Onchip_SRAM -pg 1 -lvl 3 -y 950
+preplace inst nios_system.JTAG_to_FPGA_Bridge.timing_adt -pg 1
+preplace inst nios_system.SDRAM -pg 1 -lvl 4 -y 1170
+preplace inst nios_system.System_PLL.sys_pll -pg 1
+preplace inst nios_system.System_PLL -pg 1 -lvl 1 -y 1350
+preplace inst nios_system.JTAG_UART -pg 1 -lvl 4 -y 880
+preplace inst nios_system.Pushbuttons -pg 1 -lvl 4 -y 990
+preplace inst nios_system.Nios2_Floating_Point -pg 1 -lvl 4 -y 1120
+preplace inst nios_system.Dip_Switches -pg 1 -lvl 4 -y 30
+preplace inst nios_system.Nios2 -pg 1 -lvl 3 -y 820
+preplace inst nios_system.JTAG_to_FPGA_Bridge.p2b_adapter -pg 1
+preplace inst nios_system.JTAG_to_FPGA_Bridge.clk_src -pg 1
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.expansion_jp3_in,(SLAVE)Expansion_JP3_In.external_interface) 1 0 4 NJ 580 NJ 580 NJ 580 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(MASTER)nios_system.sdram_clk,(MASTER)System_PLL.sdram_clk) 1 1 4 NJ 1380 NJ 1380 NJ 1380 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)SDRAM.wire,(SLAVE)nios_system.sdram) 1 0 4 NJ 1230 NJ 1230 NJ 1240 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.pushbuttons,(SLAVE)Pushbuttons.external_interface) 1 0 4 NJ 1060 NJ 1060 NJ 1060 NJ
+preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)Expansion_JP2.clk,(MASTER)System_PLL.sys_clk,(SLAVE)JTAG_to_FPGA_Bridge.clk,(SLAVE)Pushbuttons.clk,(SLAVE)Expansion_JP3_In.clk,(SLAVE)Expansion_JP3.clk,(SLAVE)Green_LEDs.clk,(SLAVE)SDRAM.clk,(SLAVE)Dip_Switches.clk,(SLAVE)SysID.clk,(SLAVE)JTAG_UART.clk,(SLAVE)Interval_Timer.clk,(SLAVE)Nios2.clk,(SLAVE)Onchip_SRAM_2.clk1,(SLAVE)Expansion_JP1.clk,(SLAVE)Onchip_SRAM.clk1) 1 1 3 390 1400 650 1080 1070
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Dip_Switches.external_interface,(SLAVE)nios_system.dip_switches) 1 0 4 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Expansion_JP2.external_interface,(SLAVE)nios_system.expansion_jp2) 1 0 4 NJ 320 NJ 320 NJ 320 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)System_PLL.ref_clk,(SLAVE)nios_system.system_pll_ref_clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)JTAG_UART.irq,(SLAVE)Interval_Timer.irq,(MASTER)Nios2.d_irq,(SLAVE)Expansion_JP1.interrupt,(SLAVE)Expansion_JP2.interrupt,(SLAVE)Expansion_JP3_In.interrupt,(SLAVE)Pushbuttons.interrupt,(SLAVE)Expansion_JP3.interrupt) 1 3 1 1010
+preplace netloc POINT_TO_POINT<net_container>nios_system</net_container>(MASTER)Nios2.custom_instruction_master,(SLAVE)Nios2_Floating_Point.s1) 1 3 1 970
+preplace netloc INTERCONNECT<net_container>nios_system</net_container>(SLAVE)Interval_Timer.reset,(SLAVE)Onchip_SRAM.reset1,(SLAVE)Onchip_SRAM_2.reset1,(SLAVE)Green_LEDs.reset,(SLAVE)SDRAM.reset,(SLAVE)Expansion_JP1.reset,(SLAVE)JTAG_UART.reset,(SLAVE)Dip_Switches.reset,(SLAVE)Pushbuttons.reset,(SLAVE)SysID.reset,(SLAVE)Expansion_JP2.reset,(SLAVE)Expansion_JP3.reset,(SLAVE)Nios2.reset_n,(SLAVE)Expansion_JP3_In.reset,(MASTER)System_PLL.reset_source,(SLAVE)JTAG_to_FPGA_Bridge.clk_reset,(MASTER)Nios2.jtag_debug_module_reset) 1 1 3 410 1360 690 1100 1050
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Expansion_JP1.external_interface,(SLAVE)nios_system.expansion_jp1) 1 0 4 NJ 190 NJ 190 NJ 190 NJ
+preplace netloc INTERCONNECT<net_container>nios_system</net_container>(SLAVE)Expansion_JP1.avalon_parallel_port_slave,(MASTER)Nios2.data_master,(SLAVE)SDRAM.s1,(MASTER)Nios2.instruction_master,(SLAVE)Expansion_JP2.avalon_parallel_port_slave,(MASTER)JTAG_to_FPGA_Bridge.master,(SLAVE)Dip_Switches.avalon_parallel_port_slave,(SLAVE)SysID.control_slave,(SLAVE)Onchip_SRAM.s1,(SLAVE)Interval_Timer.s1,(SLAVE)Green_LEDs.avalon_parallel_port_slave,(SLAVE)Nios2.jtag_debug_module,(SLAVE)JTAG_UART.avalon_jtag_slave,(SLAVE)Onchip_SRAM.s2,(SLAVE)Expansion_JP3.avalon_parallel_port_slave,(SLAVE)Expansion_JP3_In.avalon_parallel_port_slave,(SLAVE)Onchip_SRAM_2.s1,(SLAVE)Onchip_SRAM_2.s2,(SLAVE)Pushbuttons.avalon_parallel_port_slave) 1 2 2 710 1220 1030
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.expansion_jp3,(SLAVE)Expansion_JP3.external_interface) 1 0 4 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)System_PLL.ref_reset,(SLAVE)nios_system.system_pll_ref_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.green_leds,(SLAVE)Green_LEDs.external_interface) 1 0 4 NJ 710 NJ 710 NJ 710 NJ
+levelinfo -pg 1 0 140 1420
+levelinfo -hier nios_system 150 230 490 750 1140 1330
